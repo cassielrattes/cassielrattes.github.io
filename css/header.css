@@ -29,3 +29,7 @@
   font-weight: bold;
   margin-left: 20px;
 }
+
+.header .menu ul a:hover {
+  border-bottom: 3px solid #fff;
+}

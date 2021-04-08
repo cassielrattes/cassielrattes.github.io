@@ -1,0 +1,62 @@
+[data-menu="button"] {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  [data-menu="button"] {
+    display: flex;
+    background: blue;
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    align-items: center;
+    position: relative;
+    z-index: 300;
+    outline: none;
+  }
+
+  [data-menu="button"]::before {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 16px;
+    background: #fff;
+    box-shadow: 0 4px #fff, 0 -4px #fff;
+    margin-right: 10px;
+    transition: transform 0.3s;
+  }
+
+  [data-menu="button"].active::before {
+    transform: rotate(90deg);
+  }
+
+  [data-menu="list"] {
+    display: none;
+    display: none;
+    position: absolute;
+    width: 160px;
+    height: 100vh;
+    z-index: 100;
+    top: 15px;
+    right: 0;
+    padding: 80px 25px;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    background-color: blue;
+  }
+
+  .header .menu ul li {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 15px 0;
+  }
+
+  [data-menu="list"].active {
+    display: block;
+  }
+}
