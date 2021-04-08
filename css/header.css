@@ -1,0 +1,31 @@
+.header .container {
+  margin: 0px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: minmax(100px, auto) auto;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 40px;
+}
+
+.header {
+  background-color: blue;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.header h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.header .menu ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header .menu ul li {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-left: 20px;
+}
